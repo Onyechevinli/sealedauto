@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1><i class="fas fa-car"></i> <%= company %></h1>
+                <span class="ceo-tag">CEO: <%= ceo %></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#parts">Parts</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="margin-top: 100px; padding: 2rem 0;">
+        <div class="container">
+            <h1>About Sealed-autos</h1>
+            <div class="about-content" style="margin-top: 2rem;">
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 10px;">
+                    <h2>Our Mission</h2>
+                    <p>At Sealed-autos, we provide genuine Mercedes-Benz parts to ensure your vehicle maintains its premium performance and luxury standards.</p>
+                    
+                    <h2 style="margin-top: 2rem;">Leadership</h2>
+                    <div style="display: flex; align-items: center; gap: 2rem; margin-top: 1rem;">
+                        <div style="width: 100px; height: 100px; background: #00D2FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                            OJ
+                        </div>
+                        <div>
+                            <h3><%= ceo %></h3>
+                            <p style="color: #00D2FF; font-weight: bold;">Chief Executive Officer</p>
+                            <p>Leading Sealed-autos with a vision for excellence in automotive parts distribution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-car"></i> <%= company %></h3>
+                    <p>Your trusted source for genuine Mercedes-Benz parts</p>
+                    <p class="ceo-info">CEO: <%= ceo %></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#parts">Parts</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sealed-autos.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mercedes-Benz District</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <%= company %>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

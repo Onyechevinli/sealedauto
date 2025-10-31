@@ -1,0 +1,28 @@
+{
+  "name": "sealed-autos",
+  "version": "1.0.0",
+  "description": "Mercedes Parts E-commerce Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "author": "Ozumba Johnpaul",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Onyechevinli/ClearWork.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Onyechevinli/ClearWork/issues"
+  },
+  "homepage": "https://github.com/Onyechevinli/ClearWork#readme"
+}

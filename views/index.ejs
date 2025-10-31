@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1><i class="fas fa-car"></i> <%= company %></h1>
+                <span class="ceo-tag">CEO: <%= ceo %></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#parts">Parts</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Mercedes-Benz Parts</h1>
+            <p>Genuine parts for optimal performance and reliability</p>
+            <a href="#parts" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Genuine Parts</h3>
+                    <p>100% authentic Mercedes-Benz components</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Fast Shipping</h3>
+                    <p>Free delivery on orders over $200</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>Expert Support</h3>
+                    <p>Technical assistance available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parts Section -->
+    <section id="parts" class="parts-section">
+        <div class="container">
+            <h2>Featured Parts</h2>
+            <div class="parts-grid">
+                <% parts.forEach(part => { %>
+                <div class="part-card">
+                    <div class="part-image">
+                        <img src="<%= part.image %>" alt="<%= part.name %>">
+                    </div>
+                    <div class="part-info">
+                        <h3><%= part.name %></h3>
+                        <p class="part-category"><%= part.category %></p>
+                        <p class="part-description"><%= part.description %></p>
+                        <div class="compatibility">
+                            <strong>Compatible with:</strong>
+                            <%= part.compatibility.join(', ') %>
+                        </div>
+                        <div class="part-footer">
+                            <span class="price">$<%= part.price %></span>
+                            <button class="add-to-cart" data-id="<%= part.id %>">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-car"></i> <%= company %></h3>
+                    <p>Your trusted source for genuine Mercedes-Benz parts</p>
+                    <p class="ceo-info">CEO: <%= ceo %></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#parts">Parts</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sealed-autos.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mercedes-Benz District</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <%= company %>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

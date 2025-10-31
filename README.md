@@ -18,14 +18,14 @@ OPEN VS CODE.
 📌 Inside a new folder: ClearWork
 
 📌 Create the following file accordingly:
- ClearWork/
+ sealedauto/
 ├── package.json
 ├── server.js
 ├── public/
 │   ├── styles.css
 │   └── script.js
 └── views/
-    |── about..ejs
+    ├── about.ejs
     ├── contact.ejs
     └── index.ejs
 ------------------------------------------------------------
