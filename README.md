@@ -234,7 +234,7 @@ use a YAML patch file instead (safer for Windows):
 Create a file named patch.yaml with this content:
 ----------------------------------------------------
 spec:
-  loadBalancerIP: 51.8.41.109
+  loadBalancerIP: 51.8.41.109 # Replace with the displayed IP
 ------------------------------------------------------
 
 Apply it:
